@@ -9,8 +9,14 @@ function soloNumeros(array) {
   // Debe devolver un arreglo con solo los enteros.
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
-
-  // Tu código aca:
+    // Tu código aca:
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+      if (typeof(array[i]) === 'number') {
+        newArray.push(array[i]);
+      }
+    }
+    return newArray;
 
 }
 
